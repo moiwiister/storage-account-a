@@ -1,0 +1,1 @@
+#The purpose of this repo is to create an ADLS storage account re-usable module
