@@ -18,11 +18,17 @@ terraform {
 provider "azurerm" {
   features {}
   skip_provider_registration = "true"
+
+  # Connection to Azure
+  subscription_id = var.subscription_id
+  client_id = var.client_id
+  client_secret = var.client_secret
+  tenant_id = var.tenant_id
 }
 
 resource "azurerm_storage_account" "example" {
   name                     = var.stg_name
-  resource_group_name      = var.resource_group_name
+  resource_group_name      = var.rg_name
   location                 = var.location
   account_tier             = var.account_tier
   account_replication_type = var.replication_type

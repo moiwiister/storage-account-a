@@ -36,3 +36,19 @@ variable "environment" {
   }
   default = "dev"
 }
+
+variable "client_id" {
+  description = "App registration client ID"
+}
+
+variable "client_secret" {
+  description = "App registration client secret"
+}
+
+variable "tenant_id" {
+  description = "Azure Tenant ID"
+}
+
+variable "subscription_id" {
+  description = "Azure Subscription ID"
+}
