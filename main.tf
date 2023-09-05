@@ -26,7 +26,7 @@ provider "azurerm" {
   tenant_id = var.tenant_id
 }
 
-resource "azurerm_storage_account" "storage_account1" {
+resource "azurerm_storage_account" "storage_account" {
   name                     = var.stg_name
   resource_group_name      = var.rg_name
   location                 = var.location
