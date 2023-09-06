@@ -1,1 +1,1 @@
-#The purpose of this repo is to create an ADLS storage account re-usable module
+#The purpose of this repo is to create a storage account from a module stored in a private registry
